@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+h1 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: var(--desaturated-blue)
+}
+
+span {
+    font-size: 0.8rem;
+    color: black;
+    text-align: center;
+}
+
+
+
+.order-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 327px;
+    max-height: 567px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.hero-img-container {
+    /* max-width: 327px;
+    max-height: 567px; */
+}
+
+.hero-img-container img {
+    max-height: 100%;
+    max-width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+
+
+.order-summary-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.order-details-container {
+    margin-top: 1.5rem;
+}
+
+.order-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F9FF;
+    padding: 1rem;
+    border-radius: 15px;
+
+}
+
+.change-link {
+    color: var(--bright-blue);
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.order-button {
+    margin-top: 1.5rem;
+    padding: 0.9rem;
+    width: 100%;
+    background-color: var(--bright-blue);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 22px 24px -13px rgba(113,127,166,0.78);
+
+
+}
+
+.order-confirm-link {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.order-cancel-link {
+    margin-top: 2rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--desaturated-blue)
+}
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
