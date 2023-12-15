@@ -13,6 +13,7 @@
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
+    --active-purple: #766CF1;
 }
 
 body {
@@ -23,6 +24,8 @@ body {
     height: 100vh;
     background-color: var(--pale-blue);
     font-family: 'Red Hat Display', sans-serif;
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
 }
 
 
@@ -63,7 +66,7 @@ span {
     flex-direction: column;
     justify-content: center;
     max-width: 327px;
-    max-height: 567px;
+    height: 567px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 22px 24px -13px rgba(113,127,166,0.78);
@@ -145,15 +148,90 @@ span {
     color: var(--desaturated-blue)
 }
 
-
-
-
-
-
 .attribution { 
     font-size: 11px; text-align: center; 
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 756px) {
+
+    body {
+        background-image: url("../images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .order-component {
+        max-width: 450px;
+        min-height: 697px;
+    }
+
+    .hero-img-container {
+        width: 450px;
+        height: 225px;
+    }
+
+    .hero-img-container img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .order-summary-container {
+        padding: 3rem;
+    }
+
+    .order-summary-container > p {
+        line-height: 1.625rem;
+        text-align: center;
+    }
+
+    .order-details-container {
+        margin-top: 1.25rem;
+        min-width: 100%;
+        max-height: 98px;
+    }
+
+    .order-details {
+        padding: 1.563rem;
+    }
+
+    .order-details > p {
+        display: flex;
+        flex-direction: column;
+        margin-right: 4.25rem;
+    }
+
+    .order-button {
+        margin-top: 2rem;
+    }
+
+    .change-link:active {
+        cursor: pointer;
+        color: var(--active-purple);
+    }
+
+    .order-button:active {
+        background-color: var(--active-purple)
+    }
+
+    .order-button:hover {
+        cursor: pointer;
+    }
+
+    .order-cancel-link:active {
+        color: black;
+    }
+
+
 }
